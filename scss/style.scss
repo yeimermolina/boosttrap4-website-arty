@@ -1,0 +1,72 @@
+// Main Sass File
+$green: #c9302c;
+$overlay: rgba(5, 18,18 , 0.8);
+
+body{
+  margin-top: 96px;
+}
+
+.navbar{
+  box-shadow: 2px 2px 5px $green;
+  opacity: 0.9;
+  background: #fff;
+  
+  .nav-item{
+    font-size: 1.4rem;
+    padding-right: 20px;
+  }
+}
+
+#showcase{
+  position: relative;
+  background-image: url('../img/city2.jpeg');
+  min-height: 557px;
+  
+  .primary-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 557px;
+    background-color: $overlay;
+  }
+}
+
+.info-header{
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+
+#team{
+  img{
+    margin-top: -50px;
+  }
+  
+  .fa{
+    font-size: 25px;
+  }
+  
+  .card:hover{
+    background: #e80e0e8f;
+    color: #fff;
+    
+    .fa{
+      color: #fff;
+    }
+  }
+}
+
+#main-footer{
+  height: 150px;
+  a{
+    color: #fff;
+  }
+}
+
+@media(max-width:576px){
+  nav .container{
+    width: 100%;
+  }
+}
+
